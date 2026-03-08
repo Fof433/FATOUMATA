@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatoumata-Styliste Modéliste</title>
+    <link rel="shortcut icon" href="image/logo m.png" type="image/x-icon">
+    <meta name="description"
+        content="Atelier de création de robes de mariée et haute couture.FATOUMATA FOFANA, styliste modéliste, donne vie à la robe de vos rêves avec un savoir-faire d'exception.">
+    <meta name="keywords"
+        content="Fatoumata Fofana, Styliste Modéliste, Robes de Mariée, Haute Couture, Création Sur Mesure, Abidjan, Côte d'Ivoire">
+    <meta name="owner" content="El Moustapha Fofana">
+    <meta name="author" content="EL MOUSTAPHA FOFANA"> <!-- Google Fonts (corrigé) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#6D4C41">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="image/logo m.png" alt="Fatoumata Styliste Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Collections</a></li>
+                <li class="contact-item"><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1 class="animated-title" data-text="L'ÉLÉGANCE SUR MESURE" aria-label="L'ÉLÉGANCE SUR MESURE">
+                <span id="typed-title" aria-live="polite"></span><span class="type-cursor" aria-hidden="true"></span>
+                <noscript>L'ÉLÉGANCE SUR MESURE</noscript>
+            </h1>
+            <p class="hero-subtitle">signature de votre personnalité</p>
+            <p class="brand-name">Fatoumata Styliste Modéliste</p>
+            <a href="#gallery" class="cta-button">Découvrir mes créations</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-image reveal">
+                <img src="image/profile_fatoumata_new.jpg" alt="Fatoumata Fofana - Styliste Modéliste"
+                    class="profile-img">
+            </div>
+            <div class="about-text reveal">
+                <h2 class="about-title">À Propos de Moi</h2>
+                <p>Je suis <strong>Fatoumata Fofana</strong>, styliste-modéliste professionnelle, diplômée d’un Brevet
+                    de Technicien (BT) en stylisme-modélisme à l’École de Mode Tidiane T, avec une passion pour la
+                    création de tenues élégantes et sur mesure.</p>
+                <p>Passionnée par la mode et l'art de la couture, je donne vie à vos rêves à travers des créations
+                    uniques et personnalisées. Chaque pièce est conçue avec une attention minutieuse aux détails,
+                    alliant tradition et modernité pour sublimer votre silhouette.</p>
+                <p>Que ce soit pour une tenue de soirée, un mariage ou le quotidien, je vous accompagne dans le choix
+                    des tissus et des coupes qui vous mettront en valeur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Mes Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Création Sur Mesure</h3>
+                    <p>Conception de tenues exclusives adaptées à votre morphologie et à vos envies.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fa-solid fa-person-dress"></i>
+                    <h3>Robes de Mariée</h3>
+                    <p>Nous accordons une attention particulière aux détails, aux finitions et au choix des matières
+                        nobles pour créer la robe de vos rêves.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>Retouches & Ajustements</h3>
+                    <p>Ajustement parfait de vos vêtements préférés pour un tombé impeccable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Nos Créations</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Un aperçu de mon travail</p>
+
+            <!-- Filter controls for the gallery -->
+            <div class="filter-bar" role="tablist" aria-label="Filtres de la galerie">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Toutes</button>
+                <button class="filter-btn" data-filter="mariage">Mariage</button>
+                <button class="filter-btn" data-filter="soiree">Soirée</button>
+                <button class="filter-btn" data-filter="traditionnel">Mode</button>
+            </div>
+
+            <div class="gallery-grid" aria-live="polite">
+                <div class="gallery-item" data-category="mariage"><img src="image/creation_1.jpg"
+                        alt="Robe de mariée élégante" loading="lazy"></div>
+                <div class="gallery-item" data-category="soiree"><img src="image/creation_2.jpg"
+                        alt="Robe de soirée satinée" loading="lazy"></div>
+                <div class="gallery-item" data-category="traditionnel"><img src="image/creation_3.jpg"
+                        alt="Tenue traditionnelle revisitée" loading="lazy"></div>
+                <div class="gallery-item" data-category="mariage"><img src="image/creation_4.jpg"
+                        alt="Robe de mariée moderne" loading="lazy"></div>
+                <div class="gallery-item" data-category="soiree"><img src="image/creation5.jpg"
+                        alt="Robe de cérémonie longue" loading="lazy"></div>
+                <div class="gallery-item" data-category="mariage"><img src="image/creation 6.jpg"
+                        alt="Détails de broderie" loading="lazy"></div>
+                <div class="gallery-item" data-category="traditionnel"><img src="image/creation 7.jpg"
+                        alt="Motifs traditionnels" loading="lazy"></div>
+                <div class="gallery-item" data-category="soiree"><img src="image/creation 8.jpg" alt="Robe de cocktail"
+                        loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark text-white">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <h2 class="contact-main-title">Prête à sublimer votre style ?</h2>
+                <div class="separator-gold"></div>
+                <p class="contact-lead">Réservez dès maintenant votre séance de consultation personnalisée pour donner
+                    vie à la tenue de vos rêves.</p>
+
+                <ul class="contact-list">
+                    <li><a href="tel:+2250586717452" class="contact-action-link"><i class="fa-solid fa-phone"></i>
+                            <span>Appelez-moi : +225 0586717452</span></a></li>
+                    <li><a href="mailto:elianefatifofana@gmail.com" class="contact-action-link"><i
+                                class="fa-solid fa-envelope"></i> <span>elianefatifofana@gmail.com</span></a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Atelier : Abidjan, Grand Bassam, Côte
+                            d'Ivoire</span></li>
+                </ul>
+
+                <div class="social-links-wrapper">
+                    <p class="social-label">Suivez mes créations :</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/fofana.eliane.fati" target="_blank" rel="noopener"
+                            title="Fofana Eliane Fati" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/2250586717452" target="_blank" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card reveal">
+                <h3 class="form-title">Décrivez-moi votre projet</h3>
+                <form id="contact-form" class="contact-form" novalidate action="mailto:elianefatifofana@gmail.com"
+                    method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input id="contact-name" name="name" type="text" placeholder="Votre Nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="contact-email" name="email" type="email" placeholder="Votre Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" name="message" rows="5"
+                            placeholder="Parlez-moi de la création que vous imaginez..." required></textarea>
+                    </div>
+                    <div id="contact-feedback" role="status" aria-live="polite" class="contact-feedback"
+                        aria-atomic="true"></div>
+                    <button type="submit" class="btn-submit premium-btn">Envoyer ma demande <i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="reassurance-banner">
+            <div class="reassurance-track">
+                <span class="reassurance-item">Livraison rapide</span>
+                <span class="reassurance-item">Retours 14 jours</span>
+                <span class="reassurance-item">Paiement sécurisé</span>
+                <span class="reassurance-item">Sur-mesure &amp; Conseils</span>
+                <span class="reassurance-item">Satisfaction garantie</span>
+                <span class="reassurance-item">Livraison rapide</span>
+                <span class="reassurance-item">Retours 14 jours</span>
+                <span class="reassurance-item">Paiement sécurisé</span>
+                <span class="reassurance-item">Sur-mesure &amp; Conseils</span>
+                <span class="reassurance-item">Satisfaction garantie</span>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 « Site créé par El Moustapha Fofana » — <em>Contact : +225 058444221 &amp; +225
+                    0777823793</em></p>
+        </div>
+        <div class="footer-social">
+            <!-- Social icons removed as requested -->
+        </div>
+    </footer>
+
+    <div class="floating-controls">
+        <button id="back-to-top" class="floating-btn" aria-label="Remonter en haut"><i
+                class="fas fa-arrow-up"></i></button>
+        <button id="scroll-down" class="floating-btn" aria-label="Descendre en bas"><i
+                class="fas fa-arrow-down"></i></button>
+    </div>
+
+    <!-- Lightbox (utilisée par script.js) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Agrandir l'image">
+        <div class="lightbox-content" role="document">
+            <button class="lightbox-close" aria-label="Fermer la lightbox">&times;</button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

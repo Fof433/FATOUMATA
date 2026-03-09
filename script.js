@@ -68,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => backToTopBtn.classList.toggle('show', window.scrollY > 300));
     backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
-  const scrollDownBtn = document.getElementById('scroll-down');
-  if (scrollDownBtn) scrollDownBtn.addEventListener('click', () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }));
 
   /* -------------------------
      Lightbox (HTML ajouté dans index.html)
